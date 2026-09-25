@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+  content="width=device-width,
+  initial-scale=1.0">
+<title>
+  Cardápio | Rustik
+  Hamburgueria
+</title>
+<link rel="preconnect"
+  href="https://fonts.googleapis.com">
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700;800&display=swap">
+<link rel="stylesheet"
+  href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html"
+      class="logo">
+      RUSTIK
+    </a>
+    <a href="index.html"
+      class="btn btn-nav">
+      Voltar ao site
+    </a>
+  </div>
+</header>
+
+<section class="pag-cardapio">
+  <span class="kicker centro">
+    CARDÁPIO
+  </span>
+  <h1 class="titulo-centro">
+    Monte seu pedido
+  </h1>
+
+  <div class="filtros"
+    id="filtros">
+    <button class="filtro ativo"
+      data-cat="hamburgueres">
+      Hambúrgueres
+    </button>
+    <button class="filtro"
+      data-cat="combos">
+      Combos
+    </button>
+    <button class="filtro"
+      data-cat="acompanhamentos">
+      Acompanhamentos
+    </button>
+    <button class="filtro"
+      data-cat="bebidas">
+      Bebidas
+    </button>
+    <button class="filtro"
+      data-cat="milkshakes">
+      Milk-shakes
+    </button>
+    <button class="filtro"
+      data-cat="vegetarianos">
+      Vegetarianos
+    </button>
+  </div>
+
+  <div class="grid-produtos"
+    id="gridProdutos">
+    <!-- os produtos são
+    montados pelo
+    cardapio.js -->
+  </div>
+</section>
+
+<!-- barra do carrinho -->
+<div class="carrinho-barra"
+  id="carrinhoBarra">
+  <div class="carrinho-resumo">
+    <span id="carrinhoQtd">
+      0 itens
+    </span>
+    <span id="carrinhoTotal">
+      R$ 0,00
+    </span>
+  </div>
+  <button class="btn btn-whats"
+    id="btnFinalizar">
+    Finalizar no WhatsApp
+  </button>
+</div>
+
+<script src="cardapio.js">
+</script>
+</body>
+</html>
